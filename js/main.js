@@ -8,4 +8,3 @@ let menu = document.getElementById('menu');
 menuBtn.onclick = function () {
     menu.classList.toggle("open");
 }
-

@@ -85,7 +85,6 @@ ul,li {
     "gallery gallery"
     "contact contact"
     "copyrights social";
-    /* min-height: 100vh; */
 }
 .main-container__item {
     width: 100%;
@@ -98,7 +97,6 @@ ul,li {
     display: grid;
     grid-template-columns: 21% 26% 17% 14%;
     grid-template-rows: 200px 155px 135px 100px;
-    /* grid-template-columns: 498px 398px 619px 405px; */
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     background-color: #EEEFF1;
