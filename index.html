@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <link rel="stylesheet" href="css/simple-lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
     <!-- header -->
     <div class="main-container">
         <div class="main-container__item navigation">
             <a href="/" class="logo"><img src="images//WD.png" alt="logo"></a>
             <nav class="menu">
-                <ul class="menu__list">
+                <ul class="menu__list" id="menu">
                     <li class="menu__item"><a href="#">Главная</a></li>
                     <li class="menu__item"><a href="#">Об авторе</a></li>
                     <li class="menu__item"><a href="#">Работы</a></li>
@@ -21,6 +24,7 @@
                     <li class="menu__item"><a href="#">Контакты</a></li>
                 </ul>
             </nav>
+            <button class="menu__btn button" id="btn">Меню</button>
             <div class="offer">
                 <img src="images/frame.png" alt="grid">
                 <div class="offer__block">
@@ -28,7 +32,8 @@
                         Дизайн и верстка
                     </h1>
                     <p class="offer__text">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum
+                        является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     </p>
                     <button class="button">НАПИСАТЬ МНЕ</button>
                 </div>
@@ -36,14 +41,15 @@
         </div>
         <!-- about -->
         <div class="main-container__item about">
-           <div class="about__block">
+            <div class="about__block">
                 <h2 class="about__title">
-                     Обо мне
+                    Обо мне
                 </h2>
                 <p class="about__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала XVI века.
                 </p>
-           </div>
+            </div>
         </div>
         <!-- works -->
         <div class="main-container__item project">
@@ -103,8 +109,9 @@
                         <li>Javascript</li>
                     </ul>
                 </div>
-                <img src="images/face.png" alt="skills" width="555" height="450">
+                
             </div>
+            <img src="images/face.png" alt="skills" width="555" height="450" class="skills__img">
         </div>
         <!-- works -->
         <div class="main-container__item works">
@@ -113,55 +120,43 @@
                     Как Я работаю
                 </h2>
                 <p class="works__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала XVI века.
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sjgPfzsfMRI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1110" height="600" src="https://www.youtube.com/embed/sjgPfzsfMRI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
-    <!-- gallery -->
+        <!-- gallery -->
         <div class="main-container__item gallery">
-           <div class="gallery__block">
-                <div class="gallery__item">
-                    <a href="images/notes.png">
-                        <img src="images/notes.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/laptop.png">
-                        <img src="images/laptop.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/notes.png">
-                        <img src="images/notes.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/laptop.png">
-                        <img src="images/laptop.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/notes.png">
-                        <img src="images/notes.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/laptop.png">
-                        <img src="images/laptop.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/notes.png">
-                        <img src="images/notes.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-                <div class="gallery__item">
-                    <a href="images/laptop.png">
-                        <img src="images/laptop.png" alt="gallery" width="480" height="480">
-                    </a>
-                </div>
-           </div>
+            <div class="gallery__block " id="lightgallery">
+                <a class="gallery__button" href="images/notes.png"><img src="images/notes.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/laptop.png"><img src="images/laptop.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/notes.png"><img src="images/notes.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/laptop.png"><img src="images/laptop.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/notes.png"><img src="images/notes.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/laptop.png"><img src="images/laptop.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/notes.png"><img src="images/notes.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+                <a class="gallery__button" href="images/laptop.png"><img src="images/laptop.png" alt="gallery"
+                        title="Beautiful Image" />
+                </a>
+
+            </div>
         </div>
         <!-- Microsoft -->
         <div class="main-container__item microsoft">
@@ -174,14 +169,42 @@
         </div>
         <!-- Contact -->
         <div class="main-container__item contact">
-
+            <div class="contact__block">
+                <h2 class="contact__title">
+                    Хотите веб-сайт?
+                </h2>
+                <p class="contact__text">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала XVI века.
+                </p>
+                <form action="#" method="post" class="form">
+                    <div class="form-control">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="email" placeholder="Ваш email">
+                    </div>
+                    <textarea name="message" placeholder="Сообщение"></textarea>
+                    <button type="submit" class="button">ОТПРАВИТЬ</button>
+                </form>
+            </div>
         </div>
-        <div class="main-container__item">
-
+        <!-- Footer -->
+        <div class="main-container__item footer">
+            <div class="footer__block">
+                <div class="footer__rights">
+                    <a href="#">Igor Reznichenko</a>
+                    <span>(с) 2018. Все права защищены.</span>
+                </div>
+                <div class="footer__socials">
+                    <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="images/vk-social-network-logo.svg" alt="vkontakte"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- scripts -->
     <script src="js/simple-lightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
